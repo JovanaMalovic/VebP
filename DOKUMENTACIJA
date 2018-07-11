@@ -1,0 +1,24 @@
+
+Moja ideja je bila da napravim online biblioteku, veb sajt na kome korisnici mogu napraviti svoj nalog i dodavati knjige koje su procitali ili zele da procitaju. Svaka knjiga koju neko doda postaje javna i ostali korisnici mogu da joj pristupe, procitaju detalje o njoj i daju svoj komentar. Na ovaj nacin (mada otezano, jer nema notifikacija :) ) korisnici koji redovno obilaze knjige iz svoje biblioteke mogu da odgovore na neki komentar ili upute druge korisnike ka informacijama koje su zatrazili. Ideja je dakle bila da se napravi sajt koji ce okupljati i povezivati citalacku publiku. 
+
+VAZNE INFORMACIJE: 
+
+*bazu podataka biblioteka.sql sam eksportovala iz phpMyAdmin-a i nalazi se u folderu projekta
+
+*Sve sto je potrebno za funkcionalnost koriscenu iz Bootstrapa ukljucivala sam preko linkova sa interneta, tako da je vazna internet konekcija, inace stil i skriptovi vezani za Bootstrap nece raditi.
+
+*Pocetna strana je naslovna.php, na njoj se korisnici registruju ili uloguju ako vec imaju nalog. Nakon ulogovanja otvara se pocetna.php na kojoj vas navigacija dalje usmerava ka ostalim stranama. Mozete videti svoju biblioteku, vrsiti pretragu, menjati svoje podatke, pogledati galeriju (JS Slideshow) svih dodatih knjiga. Takodje se mozete i odjaviti. 
+
+*pocetna.php sadrzi carussel koriscen iz Bootstrapa u kome se prikazuju sve knjige iz baze sa ocenom 5 i dugme za prikaz svih knjiga u biblioteci. Svaki 'div' sa knjigom sadrzi naziv i autora knjige, link ka korisniku koji je postavio tu knjigu, ocenu koju je dao toj knjizi i link Detaljnije... do stranice te knjige na kojoj se mogu procitati detalji o knjizi i ostavljati komentari.
+
+*Do svoje biblioteke korisnik dolazi preko navigacije a do tudje biblioteke preko linka iz prikaza svih knjiga ili putem pretrage. To otvara stranu biblioteka.php koja ako joj pristupa upravo onaj cija je biblioteka, ima dugme za dodavanje knjige, a inace nema. Klikom na dugme dodaj knjigu otvara se strana dodaj_knjigu.php. Tu se vrsi validacija i ukoliko sve prodje kako treba, knjiga se dodaje u biblioteku tog korisnika. 
+
+*Na strani profil.php korisnik moze izmeniti svoje podatke. 
+
+*Na strani galerija.php korisnik moze videti galeriju svih dodatih knjiga
+
+*Na strani pretraga.php korisnik moze pretrazivati knjige po nazivu, autoru ili korisniku. Vazno je da se unese pun naziv onoga sto se trazi, inace, nece biti rezultata pretrage. 
+
+ZAKLJUCAK I JOS NEKE NAPOMENE:
+
+Ovaj sajt je bio jako ambiciozan projekat. Ja sam zelela da napravim bas ovakav kakav jeste (mada, mozda cu u buducnosti dodavati jos neke funkcionalnosti). Nailazila sam na prepreke i resenja sam uglavnom guglala i nalazila na StackOverFlow sajtu ili W3schools, kao i na Bootstrap zvanicnom sajtu. Naucila samm dosta toga sto izlazi iz granica ovog kursa, tj. snasla sam se i ubacila ih. Oko prepreka na koje sam nailazila imala sam pomoc i od strane kolege sa I smera koji me je usmeravao kao "Senior Developer", ali sam svakako sav posao uradila sama uz malu pomoc. 
